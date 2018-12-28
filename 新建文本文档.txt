@@ -1,6 +1,35 @@
+git config --global user.name "feifei258"
+git config --global user.email "18251988836@163.com"
+
+
 git init 命令把这个目录变成git可以管理的仓库
 git add filename 把文件添加到仓库
 git commit -m "注释信息"	把文件提交到仓库 
 git status 查看仓库状态 （修改文件）
 git diff 	查看修改内容
 git log		查看从最近到最远的提交日志
+git log --pretty=oneline  日志显示形式
+
+git reset --hard  HEAD^		回到上个版本
+git reset --hard  HEAD^^	回到上上个版本
+git reset --hard  HEAD~100	回到上100个版本
+git reset --hard  版本号	回到指定版本
+
+git reflog	记录每一次命令
+
+git checkout -- filename  撤销修改（回到最后一次commit 或者最后一次add）
+
+放入远程git
+ssh-keygen  -t  rsa  -C  "邮箱地址"  创建SSH key 将id_rsa.pub放到github（公钥）
+ssh -T git@github.com  测试
+
+
+创建远程仓库后关联远程仓库
+git remote add origin	远程仓库地址ssh
+git remote rm origin	删除关联
+git push origin master  推送本地内容到元辰仓库（需要现获取，否则报错）
+git pull origin master	
+
+
+
+
