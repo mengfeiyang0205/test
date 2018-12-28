@@ -29,6 +29,7 @@ git remote add origin	远程仓库地址ssh
 git remote rm origin	删除关联
 git push origin master  推送本地内容到元辰仓库（需要现获取，否则报错）
 git pull origin master	
+git pull origin master --allow-unrelated-histories
 
 
 
