@@ -1,5 +1,5 @@
 git config --global user.name "feifei258"
-git config --global user.email "18251988836@163.com"
+git config --global user.email "1888888888@163.com"
 
 
 git init 命令把这个目录变成git可以管理的仓库
